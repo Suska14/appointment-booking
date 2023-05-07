@@ -1,0 +1,15 @@
+.main_component{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: left;
+}
+
+.buttons{
+    padding: 15px;
+    align-items: center;
+}
+
+button{
+    width: 100px;
+}

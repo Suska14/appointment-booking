@@ -1,0 +1,21 @@
+<mat-card fxLayout="column" class="main_component">
+    <mat-card-header fxLayout="column">
+        <mat-form-field>
+            <mat-label>Válassz egy kormányablakot</mat-label>
+            <mat-select [(ngModel)]="selectedOffice" (selectionChange)="onSelect(selectedOffice)">
+                <mat-option *ngFor="let office of offices.governmentOffices" [value]="office">
+                    {{ office.name }} - {{ office.address }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card-header>
+    <mat-card-content fxLayout="column" class="calendar-container">
+        <mat-calendar [(selected)]="selectedDate" (selectedChange)="dateSelected($event)"></mat-calendar>
+    </mat-card-content>
+    <mat-card-actions>
+        <span>
+            <span class="buttons"><button mat-raised-button color="accent"(click)="saveAppointment()">Mentés</button></span>
+            <span class="buttons"><button mat-raised-button color="accent" [routerLink]="'/main'">Mégsem</button></span>
+        </span>
+    </mat-card-actions>
+</mat-card>

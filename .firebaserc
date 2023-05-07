@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "appointment-booking-2023": {
+      "hosting": {
+        "appointment-booking": [
+          "appointment-booking-2023"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "appointment-booking-2023"
+  }
+}

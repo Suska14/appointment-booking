@@ -1,0 +1,27 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.welcome-card {
+    padding: 2rem;
+}
+  
+.card-content {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+.footer-text {
+    font-style: italic;
+    text-align: center;
+}
+
+mat-card{
+    width: 80%;
+    height: 12%;
+}
